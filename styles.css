@@ -1,0 +1,143 @@
+body {
+  margin: 0px;
+  padding: 0px;
+  overflow: hidden;
+}
+
+hr {
+  width: 90%;
+}
+
+.space {
+  height: 9vh;
+  width: 400px;
+}
+
+/* #tabSpacer{
+  width: 50vw
+} */
+
+#flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#myPhoto {
+  float: left;
+  margin: 5vh 0 0 40px;
+  border-radius: 50%;
+  height: 85vh;
+  width: 40vw;
+}
+
+#myNameContainer {
+  padding: 10vh 0 0 50%;
+  font-size: 2vw;
+  height: 85vh;
+/*   position: relative; */
+}
+
+#myTitle {
+  margin: 30px 0 0 20%;
+}
+
+/* nav{
+  position: absolute;
+  bottom: 0;
+  display: flex;
+} */
+
+a {
+/*   text-decoration: none; */
+  margin: 1px;
+  padding-top: 2vh;
+  padding-right: 3vw;
+  padding-left: 3vw;
+  font-size: 3vw;
+  border: 1px solid black;
+/*   border-bottom-style: none; */
+  border-radius: 30% 30% 0 0;
+  background: yellow;
+  position: absolute;
+  bottom: 99.5vh;
+}
+
+@media screen and (min-width: 1130px) {
+  a {
+    font-size: 34px;
+  }
+}
+
+@media screen and (max-width: 1550px) {
+  a {
+    padding-right: 2vw;
+    padding-left: 2vw;
+  }
+}
+
+#whoTab {
+  left: 50vw;
+}
+
+#whatTab {
+  left: 60vw;
+}
+
+#whereTab {
+  left: 70.4vw
+}
+
+.section {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  background: yellow;
+/*   bottom: -99.5vh; */
+}
+
+/* #contactSection {
+  animation-name: scrolling;
+  animation-duration: 4s;
+} */
+
+/* @keyframes scrolling {
+  0% {bottom: -99.5vh;}
+  100% {bottom: -5vh;}
+} */
+/* #border{
+  height:.5vh;
+  background: black;
+} */
+/* .anchorHolder {
+  
+  width: .5vw;
+  
+} */
+
+/* #test{
+  width:100%;
+  height:10px;
+  background:red;
+} */
+
+/* #whoTab {
+  margin-left: 50vw
+} */
+
+#sectionHolder {
+/*   display: flex; */
+/*   position: relative; */
+}
+
+/* .section {
+  height: 500px;
+  width: 100%;
+  background: yellow;
+  position: absolute;
+  z-index: -1;
+} */
+
+#sectionHolder {
+  position: relative;
+  bottom: -5vh;
+}
