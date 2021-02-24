@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Tzvi Klein</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <div id="background">
+            <div id="topBar"></div>
+            <h1 id="myName">TZVI <div class="break"></div> KLEIN</h1>
+            <img id="myPhoto" src="https://github.com/tzviklein/stuff/blob/main/WIN_20200213_16_06_17_Pro.jpg?raw=true" alt="picture of handsome computer programer.">
+            <h1 id="myTitle">Web <div class="break"></div> Developer</h1>
+        </div>
+        <div id="bottomLine"></div>
+        <div id="sectionHolder">
+            <div class="section" id="aboutSection">
+                <div class="line"></div>
+                <a role="button" class="tab" id="whoTab" onclick="">who</a>
+                <div id="scroll">
+                    <p class="bigFont">Hi my name is Tzvi Klein and I'm looking for my first job as a Web Developer.</p>
+                    <hr>
+                    <p class="bigFont">My skills include:</p>
+                    <ul id="skills">
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>SASS</li>
+                        <li>Javascript</li>
+                        <li>React</li>
+                        <li>JQuery</li>
+                    </ul>
+            </div>
+            </div>
+            <div class="section" id="portfolioSection">
+                <div class="line"></div>
+                <a role="button" class="tab" id="whatTab" onclick="">what</a>
+                <p id="projectIntro" class="bigFont">Here is a collection of projects I have done.</p>
+                <div id="portfolio">
+                    <div class="projectBorder">
+                        <a href="https://codepen.io/tzvi/full/ZdxXYK"><img class="projectThumbnail" src="https://codepen.io/tzvi/pen/ZdxXYK/image/small.png"></a>
+                        <p class="projectDescription">Tetris Game:<br>made with HTML, CSS<br>and javascript.</p>
+                    </div>
+                    <div class="projectBorder">
+                        <a href="https://codepen.io/tzvi/full/YLoNqd"><img class="projectThumbnail" src="https://codepen.io/tzvi/pen/YLoNqd/image/small.png">
+                        </a>
+                        <p class="projectDescription">Tribute Page:<br>made with HTML and CSS.</p>
+                    </div>
+                    <div class="projectBorder">
+                        <a href="https://codepen.io/tzvi/full/pKERzj"><img class="projectThumbnail" src="https://codepen.io/tzvi/pen/pKERzj/image/small.png"></a>
+                        <p class="projectDescription">Survey Form:<br>made with HTML and CSS.</p>
+                    </div>
+                    <div class="projectBorder">
+                        <a href="https://codepen.io/tzvi/full/eLYyEz"><img class="projectThumbnail" src="https://codepen.io/tzvi/pen/eLYyEz/image/small.png"></a>
+                        <p class="projectDescription">Landing Page:<br>made with HTML and CSS.</p>
+                    </div>
+                    <div class="projectBorder">
+                        <a href="https://codepen.io/tzvi/full/LJREKK"><img class="projectThumbnail" src="https://codepen.io/tzvi/pen/LJREKK/image/small.png"></a>
+                        <p class="projectDescription">Technical Documentation Page:<br>made with HTML and CSS.</p>
+                    </div>
+                    <div class="projectBorder">
+                        <a href="https://codepen.io/tzvi/full/gOPRPGO"><img class="projectThumbnail" src="https://codepen.io/tzvi/pen/gOPRPGO/image/small.png"></a>
+                        <p class="projectDescription">Random Quote Generator:<br>made with HTML, CSS<br>and javascript.</p>
+                    </div>
+                    <div class="projectBorder">
+                        <a href="https://codepen.io/tzvi/full/rNxpzRe"><img class="projectThumbnail" src="https://codepen.io/tzvi/pen/rNxpzRe/image/small.png"></a>
+                        <p class="projectDescription">Markdown Previewer:<br>made with React.</p>
+                    </div>
+                    <div class="projectBorder">
+                        <a href="https://codepen.io/tzvi/full/dyGqvjQ"><img class="projectThumbnail" src="https://codepen.io/tzvi/pen/dyGqvjQ/image/small.png"></a>
+                        <p class="projectDescription">Drum Machine:<br>made with React.</p>
+                    </div>
+                    <div class="projectBorder">
+                        <a href="https://codepen.io/tzvi/full/LYGoPqy"><img class="projectThumbnail" src="https://codepen.io/tzvi/pen/LYGoPqy/image/small.png"></a>
+                        <p class="projectDescription">Calculator:<br>made with React.</p>
+                    </div>
+                    <div class="projectBorder">
+                        <a href="https://codepen.io/tzvi/full/yLOYoxG"><img class="projectThumbnail" src="https://codepen.io/tzvi/pen/yLOYoxG/image/small.png"></a>
+                        <p class="projectDescription">Pomodoro Clock:<br>made with React.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="section" id="contactSection">
+                <div class="line"></div>
+                <a role="button" class="tab" id="whereTab" onclick="">where</a>
+                <p class="bigFont">You can contact me:</p>
+                <ul id="contacts">
+                    <li>through email at <a href="mailto:tkof1988@gmail.com" class="contact-link" target="_blank">tkof1988@gmail.com</a></li>
+                    <li>call or text me at (845) 659-9907</li>
+                </ul>
+            </div>
+        </div>
+        <script src="tabMovement.js"></script>
+        <script src="titlePositioning.js"></script>
+    </body>
+</html>
+

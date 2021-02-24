@@ -4,8 +4,19 @@ body {
   overflow: hidden;
 }
 
+#background {
+  background:white url("https://images.freeimages.com/images/large-previews/2f9/circuit-board-texture-2-1184404.jpg");
+  background-repeat: no-repeat;
+  background-size: 100vw 100vh;
+  height: 100vh;
+  width: 100vw;
+}
+
 hr {
+  height: 0px;
   width: 90%;
+  border: 3px solid black;
+  border-radius: 12px;
 }
 
 .space {
@@ -13,66 +24,98 @@ hr {
   width: 400px;
 }
 
-/* #tabSpacer{
-  width: 50vw
-} */
-
 #flex {
   display: flex;
   flex-wrap: wrap;
 }
 
 #myPhoto {
-  float: left;
-  margin: 5vh 0 0 40px;
-  border-radius: 50%;
-  height: 85vh;
-  width: 40vw;
+  margin: 0 auto 0 auto;
+  clip-path: polygon(65% 0, 100% 0, 100% 30%, 30% 100%, 0 100%, 0 65%);
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+  
 }
 
-#myNameContainer {
-  padding: 10vh 0 0 50%;
-  font-size: 2vw;
-  height: 85vh;
-/*   position: relative; */
+#myName {
+  margin: 0;
+  margin-top: 50px;
+  position: absolute;
+  font-size: 7vw;
+  left: 5vw;
+  text-shadow: 50px 0px 50px red, -50px 0px 50px red,  0px 50px 50px red,  0px -50px 50px red;
 }
 
 #myTitle {
-  margin: 30px 0 0 20%;
+  position: absolute;
+  font-size: 7vw;
+  right: 5vw;
+  bottom: 5vh;
+  text-align: right;
+  text-shadow: 50px 0px 50px red, -50px 0px 50px red,  0px 50px 50px red,  0px -50px 50px red;
 }
 
-/* nav{
-  position: absolute;
-  bottom: 0;
-  display: flex;
-} */
+@media screen and (min-width: 1800px) {
+  #myName {
+    margin-bottom: 20px;
+  }
+}
 
-a {
-/*   text-decoration: none; */
+@media screen and (max-width: 1200px) {
+  #myName {
+    font-size: 9.5vw;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #myName {
+    top: 5vh;
+  }
+
+  #myTitle {
+    font-size: 10vw;
+  }
+}
+
+.line {
+  height: 2px;
+  width: 100%;
+  background: black;
+}
+
+#bottomLine {
+  height: 5px;
+  width: 100%;
+  background: #d966ff;
+  position: fixed;
+  bottom: 0;
+  z-index: 1;
+}
+
+#topBar {
+  height: 100px;
+  width: 100%;
+  background: red;
+  position: absolute;
+  transition: display 4s;
+  display: none;
+}
+
+.tab {
+  text-align: center;
+  width: 6vw;
   margin: 1px;
   padding-top: 2vh;
-  padding-right: 3vw;
-  padding-left: 3vw;
+  padding-right: 2vw;
+  padding-left: 2vw;
   font-size: 3vw;
   border: 1px solid black;
-/*   border-bottom-style: none; */
+  border-bottom-style: none;
   border-radius: 30% 30% 0 0;
   background: yellow;
   position: absolute;
   bottom: 99.5vh;
-}
-
-@media screen and (min-width: 1130px) {
-  a {
-    font-size: 34px;
-  }
-}
-
-@media screen and (max-width: 1550px) {
-  a {
-    padding-right: 2vw;
-    padding-left: 2vw;
-  }
 }
 
 #whoTab {
@@ -80,64 +123,103 @@ a {
 }
 
 #whatTab {
-  left: 60vw;
+  left: 60.4vw;
 }
 
 #whereTab {
-  left: 70.4vw
+  left: 70.8vw;
+}
+
+@media screen and (min-width: 1130px) {
+  .tab {
+    font-size: 34px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .tab {
+    font-size: 20px;
+    width: 50px;
+  }
+
+  #whoTab {
+    left: 30vw;
+  }
+  
+  #whatTab {
+    left: 50.5vw;
+  }
+  
+  #whereTab {
+    left: 71vw
+  }
 }
 
 .section {
   width: 100vw;
   height: 100vh;
   position: absolute;
-  background: yellow;
-/*   bottom: -99.5vh; */
+  background: #ffd966;
+  bottom: -94.5vh;
+  transition: linear bottom 4s;
 }
 
-/* #contactSection {
-  animation-name: scrolling;
-  animation-duration: 4s;
-} */
-
-/* @keyframes scrolling {
-  0% {bottom: -99.5vh;}
-  100% {bottom: -5vh;}
-} */
-/* #border{
-  height:.5vh;
-  background: black;
-} */
-/* .anchorHolder {
-  
-  width: .5vw;
-  
-} */
-
-/* #test{
-  width:100%;
-  height:10px;
-  background:red;
-} */
-
-/* #whoTab {
-  margin-left: 50vw
-} */
-
-#sectionHolder {
-/*   display: flex; */
-/*   position: relative; */
+#projectIntro {
+  text-align: center;
 }
 
-/* .section {
-  height: 500px;
-  width: 100%;
-  background: yellow;
-  position: absolute;
-  z-index: -1;
-} */
+.projectDescription {
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
 
 #sectionHolder {
   position: relative;
   bottom: -5vh;
+}
+
+#scroll {
+  overflow: auto;
+  height: 87vh;
+}
+
+.bigFont {
+  font-size: 5vh;
+  padding: 5vh;
+  margin: 0;
+}
+
+#portfolio {
+  display: flex;
+  height: 75vh;
+  flex-wrap: wrap;
+  justify-content: center;
+  background: #d966ff;
+  margin: 0 20px 0 20px;
+  overflow-y: auto;
+}
+
+.projectThumbnail {
+  height: 10vw;
+  width: 20vw;
+  margin: 20px;
+}
+
+#tempId {
+  font-size: 75px;
+  text-align: center;
+}
+
+#skills {
+  list-style: none;
+  font-size: 3vh;
+  column-count: 2;
+  text-align: center;
+}
+
+#contacts {
+  font-size: 3vh;
+  line-height: 10vh;
+  padding-left: 20%;
 }
