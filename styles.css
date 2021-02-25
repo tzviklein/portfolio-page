@@ -116,6 +116,7 @@ hr {
   background: yellow;
   position: absolute;
   bottom: 99.5vh;
+  cursor: pointer;
 }
 
 #whoTab {
